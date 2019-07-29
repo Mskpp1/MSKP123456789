@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Central
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            this.Text = "CENTRAL-PVC";
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.AcceptButton = button1;
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        public static string cmbx2;
+
+        public static double s1,s2,sonuc,sonuc2;
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            s1 = Convert.ToDouble(textBox1.Text);
+            s2 = Convert.ToDouble(textBox2.Text);
+
+            sonuc = s1 * s2;
+            cmbx2 = comboBox2.Text;
+
+            sonuc2 = Convert.ToDouble(cmbx2) * sonuc;
+            
+
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
+    }
+}
