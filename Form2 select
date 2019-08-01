@@ -1,0 +1,11 @@
+            s1 = Convert.ToDouble(textBox1.Text);
+            s2 = Convert.ToDouble(textBox2.Text);
+
+            sonuc = s1 * s2;
+            cmbx2 = comboBox2.Text;
+
+            sonuc2 = Convert.ToDouble(cmbx2) * sonuc;
+
+
+            Form3 form3 = new Form3();
+            form3.Show();
