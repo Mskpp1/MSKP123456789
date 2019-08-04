@@ -1,0 +1,11 @@
+Bitmap Logo = Properties.Resources._65589926_625548481279031_8779813910745186304_n;
+            Image newimage = Logo;
+            e.Graphics.DrawImage(newimage, 50, 25, newimage.Width, newimage.Height);
+            Bitmap alan = Properties.Resources.c6bb6b14db3;
+            Image newimage1 = alan;
+            e.Graphics.DrawImage(newimage1, 80, 350, Width = 150, Height = 150);
+            e.Graphics.DrawString("", new Font("Arial", 12, FontStyle.Bold), Brushes.Black, new Point(230, 400));
+            e.Graphics.DrawString("", new Font("Arial", 12, FontStyle.Bold), Brushes.Black, new Point(120, 320));
+            e.Graphics.DrawString("Style   :  ", new Font("Arial", 16, FontStyle.Bold), Brushes.DarkOrange, new Point(450, 400));
+            e.Graphics.DrawString("CENTRAL-PVC", new Font("Arial", 16, FontStyle.Regular), Brushes.IndianRed, new Point(80, 560));
+            e.Graphics.DrawImage(newimage1, 100, 850, Width = 600, Height = 150);
